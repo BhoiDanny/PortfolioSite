@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## **Portfolio Site ✌**
 
 Make your own **unique Portfolio Website**. Customize and build your own Portfolio with by editing this Template.
@@ -31,5 +30,3 @@ npm install
 gulp, ...
 
 =======
-# PortfolioSite
->>>>>>> origin/main

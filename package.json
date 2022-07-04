@@ -1,0 +1,31 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp, clean, gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhoiDanny/PortfolioSite.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Personal"
+  ],
+  "author": "Daniel Botchway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhoiDanny/PortfolioSite/issues"
+  },
+  "homepage": "https://github.com/BhoiDanny/PortfolioSite#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}

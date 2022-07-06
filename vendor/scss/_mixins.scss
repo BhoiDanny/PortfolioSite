@@ -1,0 +1,22 @@
+/*! Author | Daniel Botchway */
+/* Document
+   ========================================================================== */
+
+@mixin box {
+  box-sizing: border-box;
+}
+@mixin border {
+  border: 1px solid black;
+}
+@mixin float-center {
+  margin: 0 auto;
+}
+@mixin text-gradient($direct,$color1,$color2){
+  background-image: linear-gradient(to $direct,$color1,$color2);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin gradient($direct,$color) {
+  background-image: linear-gradient(to $direct, lighten($color,15%), lighten($color,30%));
+}

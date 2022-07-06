@@ -1,0 +1,101 @@
+///*Max Start*/
+@mixin x-extra-small-phone {
+  @media (max-width: 298px) {
+    @content;
+  }
+}
+@mixin extra-small-phone {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+@mixin phone-max-400 {
+  @media (max-width: 400px){
+    @content
+  }
+}
+@mixin phone-max-991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+@mixin phone-max-1199 {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+///*Max End*/
+
+///*Only Screen and Max Start*/
+@mixin phone-o-screen-max-480 {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-max-549 {
+  @media only screen and (max-width: 549px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-max-575 {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-max-640 {
+  @media only screen and (max-width: 640px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-max-767 {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-max-960 {
+  @media only screen and (max-width: 960px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-max-1366 {
+  @media only screen and (max-width: 1366px) {
+    @content;
+  }
+}
+///*Only Screen and Max End*/
+
+///*Min Start*/
+@mixin phone-min-576 {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin phone-min-768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin phone-min-992 {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin phone-min-1200 {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+///*Min End*/
+
+///*Only Screen and Min and Max Start*/
+@mixin phone-o-screen-min-max {
+  @media only screen and (min-width: 768px) and (max-width: 990px) {
+    @content;
+  }
+}
+@mixin phone-o-screen-min-640-max-767 {
+  @media only screen and (min-width: 640px) and (max-width: 767px) {
+    @content;
+  }
+}
+///*Only Screen and Min and Max End*/

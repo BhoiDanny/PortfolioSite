@@ -1,0 +1,36 @@
+.button {
+  border: none;
+  background-color: $primary-color;
+  padding: 10px 15px;
+  color: $white;
+  font-family: $secondary-font;
+  font-weight: 300;
+  border-radius: 20px;
+  &:hover {
+    background-color: lighten($secondary-color, 0.5%);
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: $secondary-font;
+  font-weight: 300;
+  color: darken($tertiary-color, 20%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.clearfix {
+  overflow: hidden;
+  &::before, &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}

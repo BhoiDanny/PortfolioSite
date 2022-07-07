@@ -197,8 +197,10 @@ gulp.task("watch", gulp.series("dist", function(){
     gulp.watch(paths.html).on("change", gulp.series("html", function(){
         browserSync.reload();
     }));
-    gulp.watch(`${paths.src}/img/**/*`).on("change", gulp.series("dist", function(){
+    gulp.watch(`${paths.assets}/img/**/*`).on("change", gulp.series(function(done){
+        gulp.src(`${paths.assets}/img/**/*`)
+            .pipe(gulp.dest(`${paths.dist}/assets/img`));
+        done();
         browserSync.reload();
-        console.log("Picture Changes");
     }))
 }))

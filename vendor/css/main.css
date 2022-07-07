@@ -3,6 +3,7 @@
   #5885AF - Blue Gray;      #0C2D48 - Dark Blue;
   #274472 - Dark Gray;      #2E8BC0 - Blue; Check
   #C3E0E5 - Baby Blue;      #B1D4E0 - Baby Blue;
+  #F9B600 - Orange;         #F9B600 - Orange;
 
 */
 /*! Author | Daniel Botchway */
@@ -322,6 +323,12 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   border: none;
   background-color: #145DA0;
@@ -364,21 +371,12 @@ img {
   width: 100%;
   height: 100vh;
   padding: 10px;
-  background-image: url("../img/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(23, 22, 22, 0.32), rgba(46, 139, 192, 0.4)), url("../img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.header::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(23, 22, 22, 0.62);
-}
-@media (max-width: 298px) {
+@media only screen and (max-width: 575px) {
   .header .nav {
     position: relative;
     display: flex;
@@ -413,10 +411,161 @@ img {
   .header .hero-content {
     line-height: 1.4;
   }
+  .header .hero-content p {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 1px 1px rgba(23, 22, 22, 0.92);
+  }
+  .header .hero-content h2, .header .hero-content h3 {
+    font-weight: 400;
+    margin-block: 5px;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px rgba(23, 22, 22, 0.92);
+  }
+  .header .hero-subscribe {
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 85%;
+  }
+  .header .hero-subscribe .hero-input {
+    position: relative;
+    width: 60%;
+    height: 40px;
+    padding: 9px;
+    border: 1px solid #FFF;
+    border-right: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px 0 0 20px;
+  }
+  .header .hero-subscribe .hero-input:focus {
+    outline: none;
+  }
+  .header .hero-subscribe .hero-input::-moz-placeholder {
+    color: #2E8BC0;
+  }
+  .header .hero-subscribe .hero-input::placeholder {
+    color: #2E8BC0;
+  }
+  .header .hero-subscribe .hero-submit {
+    position: absolute;
+    padding: 9px;
+    width: 40%;
+    height: 40px;
+    border: 1px solid #FFF;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.about {
+  margin-top: 30px;
+  padding: 10px;
+}
+@media only screen and (max-width: 575px) {
+  .about {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .about .about-profile {
+    width: 50%;
+    margin-inline: auto;
+  }
+  .about .about-profile img {
+    border-radius: 50%;
+  }
+  .about .about-content {
+    line-height: 1.4;
+  }
+  .about .about-content h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-transform: capitalize;
+    text-shadow: 1px 1px rgba(23, 22, 22, 0.92);
+  }
+  .about .about-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0 10px;
+    text-transform: capitalize;
+  }
+  .about .about-content p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 20px 20px;
+  }
+  .about .about-button {
+    background-color: rgba(46, 139, 192, 0.9);
+  }
+}
+
+.service-head {
+  padding: 10px;
+}
+@media only screen and (max-width: 575px) {
+  .service-head {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    height: 200px;
+    background-image: linear-gradient(to bottom, rgba(20, 93, 160, 0.5), rgba(46, 139, 192, 0.4)), url("../img/port_4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .service-head span {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 1px 1px 5px rgba(23, 22, 22, 0.92);
+  }
+}
+
+.service-content {
+  padding: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .service-content .service-card {
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    padding: 20px;
+    margin-inline: auto;
+    margin-block: 50px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1a77cd;
+    color: white;
+    border-radius: 30px 5px;
+  }
+  .service-content .service-card span {
+    font-size: 30px;
+  }
+  .service-content .service-card span i {
+    margin-bottom: 15px;
+  }
+  .service-content .service-card h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 10px;
+    text-transform: capitalize;
+  }
+  .service-content .service-card p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 20px 20px;
+  }
+  .service-content .service-card .service-button {
+    background-color: rgba(249, 182, 0, 0.85);
+    text-shadow: 0 0 1px #145DA0;
+  }
+  .service-content .service-card .service-button:hover {
+    background-color: rgba(249, 182, 0, 0.9);
+  }
 }

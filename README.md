@@ -4,9 +4,9 @@ Make your own **unique Portfolio Website**. Customize and build your own Portfol
 
 #### **Getting Started**
 
-Install node 
+Install NodeJS on your computer
 
-[Node JS]: https://nodejs.org
+[**NODE JS**](https://nodejs.org)
 
 ***Run:*** 
 
@@ -27,6 +27,40 @@ npm install
 
 **Task Commands**
 
-gulp, ...
+Run  ```gulp run``` to process files for display.
 
-=======
+```sh 
+npm run test
+```
+
+Run  ``` gulp watch``` to initiate gulp watch
+
+```shell
+npm run watch
+```
+
+Run ```gulp clean ``` to clean distribution folder or directory.
+
+```shell
+npm run clean
+```
+
+Run ```gulp dist``` to organize all files into distribution directory.
+
+```shell
+npm run dist
+```
+
+
+
+**Mobile View**
+
+![page1](images\page1.jpg)
+
+![page1](images\page2.jpg)
+
+
+
+**Desktop**
+
+*Loading… :rocket:*

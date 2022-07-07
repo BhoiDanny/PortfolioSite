@@ -55,9 +55,9 @@ npm run dist
 
 **Mobile View**
 
-![page1](images\page1.jpg)
+![page1](./images\page1.jpg)
 
-![page1](images\page2.jpg)
+![page1](./images\page2.jpg)
 
 
 

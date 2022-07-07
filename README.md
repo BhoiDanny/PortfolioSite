@@ -55,9 +55,9 @@ npm run dist
 
 **Mobile View**
 
-<img src="images/page1.jpg" alt="page1" style="zoom:50%;" />
+<img src="images/page1.jpg" alt="page1" style="zoom:50%; width:50%;" />
 
-<img src="images/page2.jpg" alt="page1" style="zoom:50%;" />
+<img src="images/page2.jpg" alt="page1" style="zoom:50%; width:50%;" />
 
 
 
